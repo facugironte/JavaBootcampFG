@@ -1,0 +1,22 @@
+Para ver el log de los commit utilicé: "git log"
+
+El resultado fue: 
+
+$ git log
+commit a9b9d8d235bdc386e0f34046bb53154cedbb3b33 (HEAD -> main)
+Author: facugironte <fgironte@gmail.com>
+Date:   Wed Nov 29 18:01:43 2023 -0300
+
+    Readme delete
+
+commit 3de6bbce8ef5b6851ba6e7b0366a2bd10bf657b5
+Author: facugironte <fgironte@gmail.com>
+Date:   Wed Nov 29 18:00:37 2023 -0300
+
+    Commit inicial
+
+commit de4c61c7c018389e41ab7f5673c1cd300d7af210 (origin/main, origin/HEAD)
+Author: facugironte <89109064+facugironte@users.noreply.github.com>
+Date:   Wed Nov 29 17:56:27 2023 -0300
+
+    Initial commit
