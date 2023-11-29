@@ -1,0 +1,6 @@
+Desafio_3
+
+Ejercicio 1: Entiendo que no habia problema en guardar el progreso en la branch custom-navbar, luego ir a la branch donde debo borrar el archivo y borrarlo. Finalmente, 
+en la branch master haria un commit con los nuevos cambios, y volveria a la rama en la que estaba trabajando.
+
+Ejercicio 2: para pasar los nuevos cambios de front-react a producción, habría que hacer un merge y solucionar los conflictos que ocurran con los nuevos cambios.
