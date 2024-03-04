@@ -5,10 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
         float unNumero;
         float dosNumero;
-        float resultado;
         String operacion;
         String[] operaciones = {"+", "-", "*", "/", "%"};
 
@@ -53,35 +51,60 @@ public class Main {
             }
         }
 
+        mostrarResultado(unNumero, dosNumero, operacion);
+
+    }
+
+
+
+    public static void mostrarResultado(float numeroUno, float numeroDos, String operacion){
+        float resultado;
+
         switch (operacion) {
             case "+":
-                resultado = unNumero + dosNumero;
-                System.out.println(resultado);
+                resultado = sumar(numeroUno, numeroDos);
+                System.out.println(numeroUno + operacion + numeroDos + " = " + resultado);
                 break;
             case "-":
-                resultado = unNumero - dosNumero;
-                System.out.println(resultado);
+                resultado = restar(numeroUno, numeroDos);
+                System.out.println(numeroUno + operacion + numeroDos + " = " + resultado);
                 break;
             case "*":
-                resultado = unNumero * dosNumero;
-                System.out.println(resultado);
+                resultado = multiplicar(numeroUno, numeroDos);
+                System.out.println(numeroUno + operacion + numeroDos + " = " + resultado);
                 break;
             case "/":
-                if (dosNumero != 0) {
-                    resultado = unNumero / dosNumero;
-                    System.out.println(resultado);
+                if (numeroDos != 0) {
+                    resultado = dividir(numeroUno, numeroDos);
+                    System.out.println(numeroUno + operacion + numeroDos + " = " + resultado);
                 } else {
                     System.out.println("No se puede dividir por cero.");
                 }
                 break;
             case "%":
-                resultado = unNumero % dosNumero;
-                System.out.println(resultado);
+                resultado = resto(numeroUno, numeroDos);
+                System.out.println(numeroUno + operacion + numeroDos + " = " + resultado);
                 break;
-            default:
-
         }
+    }
 
+    public static float dividir(float numeroUno, float numeroDos){
+        return numeroUno/numeroDos;
+    }
 
+    public static float sumar(float numeroUno, float numeroDos){
+        return numeroUno+numeroDos;
+    }
+
+    public static float restar(float numeroUno, float numeroDos){
+        return numeroUno-numeroDos;
+    }
+
+    public static float multiplicar(float numeroUno, float numeroDos){
+        return numeroUno*numeroDos;
+    }
+
+    public static float resto(float numeroUno, float numeroDos){
+        return numeroUno%numeroDos;
     }
 }
