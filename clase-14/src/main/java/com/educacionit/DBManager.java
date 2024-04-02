@@ -18,7 +18,7 @@ public class DBManager {
 	public void conectar() throws DBManagerException {
 
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost/bootcamp", "root", "EstaEsLaContrasenaRoot");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost/bootcamp", "root", "1906");
 			System.out.println("La conexion se establecio correctamente");
 
 		} catch (SQLException sqlExcex) {

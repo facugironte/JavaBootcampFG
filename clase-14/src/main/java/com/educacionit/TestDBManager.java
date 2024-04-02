@@ -1,10 +1,10 @@
 package com.educacionit;
 
-import java.sql.SQLException;
+import com.educacionit.exception.DBManagerException;
 
 public class TestDBManager {
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) throws DBManagerException {
 		
 		 
 		DBManager dbManager = new DBManager();
