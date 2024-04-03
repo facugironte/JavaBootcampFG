@@ -24,10 +24,10 @@ public class DBManager {
 		}
 	}
 	
-	public ArrayList<Ciudad> obtenerCiudades() throws DBManagerException{
+	public ArrayList<Ciudad> obtenerCiudades(String busqueda) throws DBManagerException{
 		ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
 		
-		String query = "select id, descripcion, id_pais from ciudades";
+		String query = "SELECT id, descripcion, id_pais FROM ciudades WHERE LOWER(descripcion) LIKE '%" + busqueda.toLowerCase() + "%'"; //
 		Statement statement = null;
 		ResultSet  resultSet = null;
 		

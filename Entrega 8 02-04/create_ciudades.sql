@@ -1,5 +1,5 @@
 create table ciudades (
-    id int primary key unique not null,
+    id int primary key unique not null auto_increment,
     descripcion varchar(255),
     id_pais int
 );
