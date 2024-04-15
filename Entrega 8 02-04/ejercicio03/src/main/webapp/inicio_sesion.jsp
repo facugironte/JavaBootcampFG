@@ -9,6 +9,7 @@
     %>
     </h2>
     
+    
     <form action="IniciarSesionServlet" method ="post">
     
     	Usuario: <input type="text" name="user">

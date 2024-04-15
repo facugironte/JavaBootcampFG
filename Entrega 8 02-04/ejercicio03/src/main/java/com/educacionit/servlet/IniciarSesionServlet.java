@@ -21,22 +21,24 @@ public class IniciarSesionServlet extends HttpServlet {
 		
 		try {
 			
-			String usuario = request.getParameter("usuario");
+			String usuario = request.getParameter("user");
 			String psw = request.getParameter("psw");
 
 			HttpSession session = request.getSession();
 			
 			boolean userOk = false;
 			boolean pswOk = false;
-			
-			if(session.getAttribute("usuario") == usuario) {
+				
+			if(session.getAttribute("usuario").equals(usuario)) {
 				userOk = true;				
 			}
-			if(session.getAttribute("psw") == psw) {
+			if(session.getAttribute("psw").equals(psw)) {
 				pswOk = true;				
 			}
 			
+			
 			if(userOk && pswOk) {
+				request.setAttribute("mensaje", "Sesión iniciada");
 				request.getRequestDispatcher("sesion_iniciada.jsp").forward(request, response);
 			} else {
 				request.setAttribute("mensaje", "Usuario o contraseña incorrectas");
