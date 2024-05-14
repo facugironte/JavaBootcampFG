@@ -1,14 +1,14 @@
-package com.educationit.model;
+package com.educacionit.model;
 
 public class Alumno {
 	private Integer legajo;
 	private String nombre;
 	private Integer edad;
-	
-	
-	
-	public Alumno(Integer legajo, String nombre, Integer edad) {
+	public Alumno() {
 		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Alumno(int legajo, String nombre, int edad) {
 		this.legajo = legajo;
 		this.nombre = nombre;
 		this.edad = edad;
@@ -31,14 +31,11 @@ public class Alumno {
 	public void setEdad(Integer edad) {
 		this.edad = edad;
 	}
-	
 	@Override
 	public String toString() {
-		return this.legajo + " " + this.nombre + " " + this.edad;
+		return "Alumno [legajo=" + legajo + ", nombre=" + nombre + ", edad=" + edad + "]";
 	}
 	
 	
-	
-	
-	
+
 }
