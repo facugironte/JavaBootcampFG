@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+label, input {
+    display: block;
+    margin: 10px 0;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.category {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.category input {
+    margin-right: 10px;
+}
+.category button {
+    background-color: red;
+}
+.results {
+    margin-top: 20px;
+}
